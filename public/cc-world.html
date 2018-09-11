@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Ahmad Khalilieh | cc-world</title>
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- Navigator -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" style="font-family: 'Kaushan Script', cursive;">
+                <img src="./img/logo.png" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <b><a class="nav-link new active" href="#top">Go top</a></b>
+                    </li>
+                    <li class="nav-item">
+                        <b><a class="nav-link new" href="#contact">contact</a></b>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- projects -->
+    <section id="projects">
+        <h1>CryptoCurrency World</h1>
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 pro-style">
+                    <h3>Description</h3>
+                    <p><strong>CryptoCurrency World</strong> is a learning platform where the user can buy/sell crypto currencies
+                        with real prices but with fake money. This project was made by me and two other colleagues in the
+                        final Hackathon within the framework of the coding bootcamp.</p>
+                    <p>You can think about it as a practice before getting into the real world of crypto currencies trading.
+                    </p>
+                    <p><strong>My part</strong> was basically doing the whole Back-End side of the app, including:</p>
+                    <ul>
+                        <li>Fetching data from an external CryptoCurrency API, for that I've created seperate server that
+                            updates the data every couple of seconds to make sure that the information in the app is up to
+                            date
+                        </li>
+                        <li>Creating and updating the DB, creating schemas and models</li>
+                        <li>Building the routes to handle different requests from client-side</li>
+                        <li>Handling the Token based Authentication (still not completely finished)</li>
+                    </ul>
+                    <strong style="color: red;">Right now there is a problem with charts we are trying to fix it !!</strong>
+                    <h3>Features</h3>
+                    <ul>
+                        <li>When the user creates new account, he'll get a fake 5000$ as a start</li>
+                        <li>In the main page, he can see a table that includes the leading crypto currencies with real information
+                            about each one of them</li>
+                        <li>The moment he chooses a certain currency to buy, he'll be directed to the coin page, that includes
+                            informatin about it and a calculator to help him decide the amount he wants to buy</li>
+                        <li>The user can also visit his portfolio to check out what he has bought/sold, and porfolios of
+                            other users to see how they are performing and try to learn from them. Again, the point is to
+                            learn
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 pro-style">
+                    <h3>Technologies</h3>
+                    <br>
+                    <h5>Front end:</h5>
+                    <p>HTML, CSS, Angular 6, Bootstrap</p>
+                    <h5>Back end:</h5>
+                    <p>Node.js, Express, Passport (Token based authentication), MongoDB, mongoose</p>
+                    <h5>Tools:</h5>
+                    <p>Deployed with Heroku, Postman</p>
+                    <br>
+                    <button type="button" class="btn btn-primary"><a href="https://github.com/orenItzhakov/CryptoCurrencyWorld"
+                            target="_blank" style="color: white;">Source Code</a><br></button>
+                    <button type="button" class="btn btn-secondary"><a href="https://cc-world.herokuapp.com/login" target="_blank"
+                            style="color: white;">Try it</a></button>
+                </div>
+            </div>
+            <div class="pro-style">
+                <h3 style="padding-bottom: 20px;">Gallery</h3>
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="./img/crypto/crypto4.png" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./img/crypto/crypto5.png" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./img/crypto/crypto6.png" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./img/crypto/crypto7.png" alt="Fourth slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!-- contact -->
+    <div id="contact">
+        <form class="container">
+            <div class="col-12 contact">
+                <h1>Contact me</h1>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputName">Your name</label>
+                <i class="fa fa-user"></i>
+                <input id="name" type="text" class="form-control" placeholder="Your name">
+            </div>
+            <h5 id='result'></h5>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <i class="fa fa-envelope"></i>
+                <input id="email" type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputComment">Your message</label>
+                <i class="fa fa-comment"></i>
+                <textarea id="message" name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="  Comment"></textarea>
+            </div>
+            <div class="btn-container">
+                <button type="button" class="btn btn-primary" id="submit" data-toggle="popover" title="Email Sent!!" data-trigger="focus"
+                    data-content="Thank you, We will get in touch soon !!">Send it</button>
+            </div>
+        </form>
+    </div>
+    <br>
+    <!-- media -->
+    <section id="media">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-12 social">
+                    <a class="facebook" href="https://www.facebook.com/ahmad.khalilieh" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a class="linkedin" href="https://www.linkedin.com/in/ahmad-khalilieh/" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a class="github" href="https://github.com/ahmadFKH" target="_blank">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <br>
+            <div class="text-center" style="color: white;">
+                Copyright © 2018 Ahmad Khalilieh - Freelance FullStack Web Developer
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+<script src=https://code.jquery.com/jquery-3.3.1.min.js></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+<script src="main.js"></script>
+
+</html>

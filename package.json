@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My own portfolio (website)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "portfolio"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
+    "mongoose": "^5.2.14",
+    "nodemon": "^1.18.4",
+    "path": "^0.12.7"
+  }
+}
