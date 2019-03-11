@@ -3,7 +3,7 @@ const path = require('path');
 const http = require('http');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-const config = require('./api/routes/config');
+//const config = require('./api/routes/config');
 // Get our API routes
 const api = require('./api/routes/clientsApi');
 
