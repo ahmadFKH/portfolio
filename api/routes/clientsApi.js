@@ -1,9 +1,9 @@
 const express = require('express');
 const sgMail = require('@sendgrid/mail');
 const Client = require('../models/clientModel');
-const config = require('./config');
+//const config = require('./config');
 
-var myEmail = config.MY_EMAIL;
+var myEmail = "ahmad.khalilieh@mail.huji.ac.il";
 
 const router = express.Router();
 

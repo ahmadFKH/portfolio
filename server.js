@@ -7,7 +7,7 @@ const config = require('./api/routes/config');
 // Get our API routes
 const api = require('./api/routes/clientsApi');
 
-mongoose.connect('mongodb://' + config.mlab_UserName + ':' + config.mlab_password + '@ds123372.mlab.com:23372/portfolio' , 
+mongoose.connect('mongodb://ahmad:ahm123@ds123372.mlab.com:23372/portfolio' , 
 { useNewUrlParser: true },
  function() {
   console.log("DB connection established!!!");
